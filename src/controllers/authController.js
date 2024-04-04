@@ -10,8 +10,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: 'h.batyrkhan@gmail.com',
-    pass: 'aozkywuvhnqeovgp',
+    user: '',
+    pass: '',
   },
 });
 
@@ -38,7 +38,7 @@ export const signupController = async (req, res) => {
     const mailOptions = {
       from: {
         name: 'Jwt Authentication',
-        address: 'h.batyrkhan@gmail.com'
+        address: ''
       },
       to: [email], // list of receivers
       subject: "Verify Your Gmail Account", // Subject line
